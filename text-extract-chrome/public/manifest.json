@@ -9,6 +9,10 @@
   },
   "action": {
     "default_popup": "popup.html",
+    "default_popup_size": {
+      "width": 400,
+      "height": 300
+    },
     "default_icon": {
       "16": "images/logo192.png",
       "48": "images/logo192.png",
