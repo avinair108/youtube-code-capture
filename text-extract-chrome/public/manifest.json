@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Text Extraction Extension",
+  "version": "1.0",
+  "description": "Capture text from images or videos on the current tab.",
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/logo192.png",
+      "48": "images/logo192.png",
+      "128": "images/logo192.png"
+    }
+  },
+  "icons": {
+    "16": "images/logo192.png",
+    "48": "images/logo192.png",
+    "128": "images/logo192.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
