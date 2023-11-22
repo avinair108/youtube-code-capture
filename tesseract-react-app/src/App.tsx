@@ -1,6 +1,7 @@
 // src/App.tsx
 import React from 'react';
 import ImageTranscription from './ImageTranscription';
+import './App.css';
 
 const App: React.FC = () => {
   return (
